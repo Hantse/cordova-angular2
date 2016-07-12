@@ -1,0 +1,12 @@
+<div class="block-header">
+    <h2>Dashboard</h2>
+</div>
+
+
+<div class="mini-charts">
+    <div class="row">
+        <div class="col-sm-6 col-md-3" *ngFor="let blockstat of stats.blockStats">
+            <stat-block [block]="blockstat"></stat-block>
+        </div>
+    </div>
+</div>

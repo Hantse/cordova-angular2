@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header">
+        <h2>List of products <small>The list of products.</small></h2>
+
+        <ul class="actions">
+            <li class="dropdown action-show" uib-dropdown="">
+                <a href="" uib-dropdown-toggle="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    <i class="zmdi zmdi-more-vert"></i>
+                </a>
+
+                <div class="dropdown-menu pull-right">
+                    <p class="p-20">
+                        You can put anything here
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card-body card-padding">
+        <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+        
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>
+                            Name
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>
+                            {{ product.productId }}
+                        </td>
+                        <td>
+                            {{ product.name }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
